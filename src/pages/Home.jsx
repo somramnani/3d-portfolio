@@ -3,6 +3,8 @@ import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
 import Island from "../models/Island";
 import Sky from "../models/Sky";
+import Plane from "../models/Plane";
+import Bird from "../models/Bird";
 
 const Home = () => {
   const adjustIslandForScreenSize = () => {
@@ -38,6 +40,8 @@ const Home = () => {
             />
           </Suspense>
 
+          <Plane />
+          <Bird />
           <Sky />
 
           <Island
